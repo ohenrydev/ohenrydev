@@ -24,7 +24,7 @@
         <li>📫 How to reach me: <a href="mailto:ohenrydevopr@gmail.com">ohenrydevopr@gmail.com</a></li><br />
         <li>📄 Know about my experiences in my <a href="https://ohenrydev.vercel.app/about">Website</a></li><br />
         <li>⚡ Those old kungfu movies where they fly through bamboo forests and do acrobatics as if gravity were an
-          optional force? I love them!</li><br />
+          optional force? I love them!</li>
       </ul>
       <br />
     </td>
@@ -56,8 +56,8 @@
         Tools</h2>
       <img src="https://img.shields.io/badge/-aws-orange?style=for-the-badge&logo=awslambda&logoColor=white" />
       <img src="https://img.shields.io/badge/-vercel-black?style=for-the-badge&logo=vercel&logoColor=white" />
-      <img src="https://img.shields.io/badge/-azure-blue?style=for-the-badge&logo=azure&logoColor=white" />
-      <img src="https://img.shields.io/badge/-vscode-blue?style=for-the-badge&logo=vscode&logoColor=white" />
+      <img src="https://img.shields.io/badge/-azure-blue?style=for-the-badge&logo=azuredevops&logoColor=white" />
+      <img src="https://img.shields.io/badge/-vscode-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
     </td>
   </tr>
   <table />
