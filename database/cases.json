@@ -1,0 +1,173 @@
+[
+  {
+    "uuid": "c9f0f1e8",
+    "title": "This website",
+    "description": "My fingerprint in the web",
+    "techs": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js"
+    ],
+    "link": "https://github.com/ohenrydev/ohenrydev",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e1",
+    "title": "Just Draw",
+    "description": "A minimalistic drawing app",
+    "techs": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Streams",
+      "Canvas"
+    ],
+    "link": "https://github.com/ohenrydev/just-draw",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e2",
+    "title": "CX Chatbot",
+    "description": "A chatbot powered by LLMs, that analyzes the transcription of customer calls to provide insights",
+    "techs": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "Pydantic",
+      "FastAPI",
+      "OpenAI"
+    ],
+    "link": "#",
+    "nda": true
+  },
+  {
+    "uuid": "c9f0f2e6",
+    "title": "Smart Recruiting System",
+    "description": "An plataform to analyze talents in the hiring database, and ca create customized CX Tests and more",
+    "techs": [
+      "C#",
+      "Python",
+      "FastAPI",
+      "Vue.js",
+      "PostgreSQL"
+    ],
+    "link": "#",
+    "nda": true
+  },
+  {
+    "uuid": "c9f0g1e5",
+    "title": "Design System and UI Kit",
+    "description": "A design system and UI for a company, made using Figma, Radix UI and Tailwind CSS(For React.js) and Web Components(For Others Frameworks)",
+    "techs": ["Figma", "Radix UI", "Tailwind CSS", "Web Components", "Jest", "Cypress", "TypeScript", "JSDocs", "Storybook"],
+    "link": "#",
+    "nda": true
+  },
+  {
+    "uuid": "c9f0f1e3",
+    "title": "Anti-Fraud System",
+    "description": "An anti-fraud system that analyzes credit card transactions, email history on the web, behavior on the chekout flow and more",
+    "techs": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "MongoDB",
+      "AWS Lambda",
+      "C#"
+    ],
+    "link": "#",
+    "nda": true
+  },
+  {
+    "uuid": "c9f0f1e4",
+    "title": "XBRI Tire Store",
+    "description": "An e-commerce store for XBRI Brasil in partnership with the Pneufree.com e-commerce platform",
+    "techs": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "MongoDB",
+      "C#"
+    ],
+    "link": "https://xbri.com.br",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e5",
+    "title": "Michelin Tire Store",
+    "description": "An e-commerce store for Michelin Brasil in partnership with the Pneufree.com e-commerce platform",
+    "techs": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "MongoDB",
+      "C#"
+    ],
+    "link": "https://michelin.pneufree.com.br",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e6",
+    "title": "Pendency Scan",
+    "description": "A rust and Tauri app that allows you to scan excel files from diferent sources and track divergences, generate heat maps and more",
+    "techs": [
+      "Rust",
+      "Tauri",
+      "React.js",
+      "TypeScript"
+    ],
+    "link": "https://github.com/ohenrydev/pendency-scan",
+    "nda": true
+  },
+  {
+    "uuid": "c9f0f1e7",
+    "title": "Balls Attack",
+    "description": "A minimal game to  study physics, Math, and Geometry inside Javascript",
+    "techs": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "https://github.com/ohenrydev/balls",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e8",
+    "title": "Min Notes",
+    "description": "A minimalistic note taking app, that saves your notes in your browser cache",
+    "techs": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "https://github.com/ohenrydev/just-notes",
+    "nda": false
+  },
+  {
+    "uuid": "c9f0f1e9",
+    "title": "Sales BI",
+    "description": "An plataform to analyze sales data from all sources in the company, with dashboards and reports, and real-time analytics",
+    "techs": [
+      "Windows Forms",
+      "SQL Server",
+      "C#",
+      "AWS Lambda",
+      "Python",
+      "Redis",
+      "MongoDB",
+      "PostgreSQL",
+      "Senior ERP",
+      "SAP B1"
+    ],
+    "link": "#",
+    "nda": true
+  }
+]

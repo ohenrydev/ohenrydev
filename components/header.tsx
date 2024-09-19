@@ -39,7 +39,7 @@ export function Header() {
                     Projects
                 </Link>
                 <Link
-                    data-active={pathname === "/blog"}
+                    data-active={pathname.startsWith("/blog")}
                     href="/blog"
                     className="hover:underline data-[active=true]:underline data-[active=true]:font-bold underline-offset-8 decoration-2 transition-all duration-200"
                 >

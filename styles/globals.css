@@ -48,6 +48,10 @@
   .animate-bounce-right {
     animation: bounce-right 0.5s ease;
   }
+
+  .animate-bounce-once-from-zero {
+    animation: bounce-once-from-zero 0.4s ease-in-out;
+  }
 }
 
 @keyframes bounce-right {
@@ -58,5 +62,17 @@
 
   50% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes bounce-once-from-zero {
+  0%,
+  100% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }

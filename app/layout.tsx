@@ -8,7 +8,9 @@ import { Header } from "@/components/header"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
-export const metadata: Metadata = { title: "Henrique Martins" }
+export const metadata: Metadata = {
+  title: "Henrique Martins"
+}
 
 interface RootLayoutProps { children: ReactNode }
 

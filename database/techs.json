@@ -1,0 +1,54 @@
+[
+  {
+    "uuid": "776dacb8-2a2d-4fcc-8c98-814ed5fa0b61",
+    "desc": "React.js"
+  },
+  {
+    "uuid": "889447a5-dcd3-4c91-b594-78c746b89927",
+    "desc": "Next.js"
+  },
+  {
+    "uuid": "aad9a987-b366-4d3a-8f1e-4cd59b304524",
+    "desc": "Tailwind CSS"
+  },
+  {
+    "uuid": "98e548e7-32b6-4978-9ad2-ac30e731dfb2",
+    "desc": "TypeScript"
+  },
+  {
+    "uuid": "e27a571c-f895-4e17-b80b-8dbf6771cc07",
+    "desc": "MongoDB"
+  },
+  {
+    "uuid": "26316144-a116-4a41-b33d-5d2471067099",
+    "desc": "Node.js"
+  },
+  {
+    "uuid": "c751905e-5276-48a2-b4cf-bd39d7cd91ea",
+    "desc": "NestJS"
+  },
+  {
+    "uuid": "bb2b6bf4-5577-421d-9603-626c06cb679e",
+    "desc": "PostgreSQL"
+  },
+  {
+    "uuid": "6a9b6dcf-a94e-49ee-b73a-7777d2e244bc",
+    "desc": "Vercel"
+  },
+  {
+    "uuid": "aeb6fe7b-aad2-4b1f-b0cd-a11f3a138b3f",
+    "desc": "Git"
+  },
+  {
+    "uuid": "c607aaa0-ec7d-4fa6-b051-b1cfc3fdbb7a",
+    "desc": "Python"
+  },
+  {
+    "uuid": "12c9af63-91f9-43f5-920c-92904b5b049c",
+    "desc": "C#"
+  },
+  {
+    "uuid": "61df7440-f80e-4797-9a37-87ba6620ec15",
+    "desc": "Docker"
+  }
+]
