@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "ohenrydev-website",
+    "title": "This website",
+    "description": "My fingerprint in the web",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" }
+    ],
+    "repo": "https://github.com/ohenrydev/ohenrydev",
+    "link": "https://ohenry.dev",
+    "nda": false
+  },
+  {
+    "slug": "just-draw",
+    "title": "Just Draw",
+    "description": "A minimalistic drawing app",
+    "techs": [
+      { "name": "HTML", "variant": "olive" },
+      { "name": "CSS", "variant": "amber" },
+      { "name": "JavaScript", "variant": "olive" },
+      { "name": "Streams", "variant": "amber" },
+      { "name": "Canvas", "variant": "olive" }
+    ],
+
+    "repo": "https://github.com/ohenrydev/just-draw",
+    "link": "https://justdraw.vercel.app/",
+    "nda": false
+  },
+  {
+    "slug": "cx-chatbot",
+    "title": "CX Chatbot",
+    "description": "A chatbot powered by LLMs, that analyzes the transcription of customer calls to provide insights",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "Node.js", "variant": "olive" },
+      { "name": "Python", "variant": "amber" },
+      { "name": "Pydantic", "variant": "olive" },
+      { "name": "FastAPI", "variant": "amber" },
+      { "name": "OpenAI", "variant": "olive" }
+    ],
+    "nda": true
+  },
+  {
+    "slug": "smart-recruiting-system",
+    "title": "Smart Recruiting System",
+    "description": "An plataform to analyze talents in the gupy.io hiring database, and ca create customized CX Tests and more",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "C#", "variant": "olive" },
+      { "name": "Python", "variant": "amber" },
+      { "name": "FastAPI", "variant": "olive" },
+      { "name": "Vue.js", "variant": "amber" },
+      { "name": "PostgreSQL", "variant": "olive" }
+    ],
+    "nda": true
+  },
+  {
+    "slug": "design-system-and-ui-kit",
+    "title": "Design System and UI Kit",
+    "description": "A design system and UI for a company, made using Figma, Radix UI and Tailwind CSS(For React.js) and Web Components(For Others Frameworks)",
+    "techs": [
+      { "name": "Figma", "variant": "olive" },
+      { "name": "Radix UI", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "Web Components", "variant": "amber" },
+      { "name": "Jest", "variant": "olive" },
+      { "name": "Cypress", "variant": "amber" },
+      { "name": "TypeScript", "variant": "olive" },
+      { "name": "JSDocs", "variant": "amber" },
+      { "name": "Storybook", "variant": "olive" }
+    ],
+    "nda": true
+  },
+  {
+    "slug": "anti-fraud-system",
+    "title": "Anti-Fraud System",
+    "description": "An anti-fraud system that analyzes credit card transactions, email history on the web, behavior on the chekout flow and more",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "Node.js", "variant": "olive" },
+      { "name": "Python", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "AWS Lambda", "variant": "amber" },
+      { "name": "C#", "variant": "olive" }
+    ],
+    "nda": true
+  },
+  {
+    "slug": "pneufree-ecommerce",
+    "title": "Pneufree E-commerce",
+    "description": "An e-commerce store for Pneufree.com, one of the largest tire retailers in the LATAM",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "C#", "variant": "amber" },
+      { "name": "AWS Lambda", "variant": "olive" },
+      { "name": "Python", "variant": "olive" }
+    ],
+    "link": "https://pneufree.com.br",
+    "nda": false
+  },
+  {
+    "slug": "xbri-ecommerce",
+    "title": "XBRI Tire Store",
+    "description": "An e-commerce store for XBRI Brasil in partnership with the Pneufree.com e-commerce platform",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "Node.js", "variant": "olive" },
+      { "name": "Python", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "C#", "variant": "amber" }
+    ],
+    "link": "https://xbri.com.br",
+    "nda": false
+  },
+  {
+    "slug": "michelin-ecommerce",
+    "title": "Michelin Tire Store",
+    "description": "An e-commerce store for Michelin Brasil in partnership with the Pneufree.com e-commerce platform",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "Node.js", "variant": "olive" },
+      { "name": "Python", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "C#", "variant": "amber" }
+    ],
+    "link": "https://michelin.pneufree.com.br",
+    "nda": false
+  },
+  {
+    "slug": "pendency-scan",
+    "title": "Pendency Scan",
+    "description": "A rust and Tauri app that allows you to scan excel files from diferent sources and track divergences, generate heat maps and more",
+    "techs": [
+      { "name": "Rust", "variant": "olive" },
+      { "name": "Tauri", "variant": "amber" },
+      { "name": "React.js", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" }
+    ],
+    "nda": true
+  },
+  {
+    "slug": "balls-attack",
+    "title": "Balls Attack",
+    "description": "A minimal game to  study physics, Math, and Geometry inside Javascript",
+    "techs": [
+      { "name": "HTML", "variant": "olive" },
+      { "name": "CSS", "variant": "amber" },
+      { "name": "JavaScript", "variant": "olive" }
+    ],
+    "repo": "https://github.com/ohenrydev/balls",
+    "nda": false
+  },
+  {
+    "slug": "just-notes",
+    "title": "Min Notes",
+    "description": "A minimalistic note taking app, that saves your notes in your browser cache",
+    "techs": [
+      { "name": "HTML", "variant": "olive" },
+      { "name": "CSS", "variant": "amber" },
+      { "name": "JavaScript", "variant": "olive" }
+    ],
+    "repo": "https://github.com/ohenrydev/just-notes",
+    "link": "https://minnotes.vercel.app/",
+    "nda": false
+  },
+  {
+    "slug": "sales-bi",
+    "title": "Sales BI",
+    "description": "An plataform to analyze sales data from all sources in the company, with dashboards and reports, and real-time analytics",
+    "techs": [
+      { "name": "Windows Forms", "variant": "olive" },
+      { "name": "SQL Server", "variant": "amber" },
+      { "name": "C#", "variant": "olive" },
+      { "name": "AWS Lambda", "variant": "amber" },
+      { "name": "Python", "variant": "olive" },
+      { "name": "Redis", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "PostgreSQL", "variant": "amber" },
+      { "name": "Senior ERP", "variant": "olive" },
+      { "name": "SAP B1", "variant": "amber" }
+    ],
+    "nda": true
+  }
+]

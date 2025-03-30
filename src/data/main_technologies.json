@@ -1,0 +1,15 @@
+[
+  { "name": "React.js", "variant": "olive" },
+  { "name": "Next.js", "variant": "amber" },
+  { "name": "Tailwind CSS", "variant": "olive" },
+  { "name": "TypeScript", "variant": "amber" },
+  { "name": "MongoDB", "variant": "olive" },
+  { "name": "Node.js", "variant": "amber" },
+  { "name": "NestJS", "variant": "olive" },
+  { "name": "PostgreSQL", "variant": "amber" },
+  { "name": "Vercel", "variant": "olive" },
+  { "name": "Git", "variant": "amber" },
+  { "name": "Python", "variant": "olive" },
+  { "name": "C#", "variant": "amber" },
+  { "name": "Docker", "variant": "olive" }
+]

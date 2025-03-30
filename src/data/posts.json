@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "procrastination-and-perfecionism-developers-biggest-enemies",
+    "name": "Procrastination and Perfecionism: Developers Biggest Enemies",
+    "brief": "My experience with ADHD and how it affects my professional life and personal projects.",
+    "date": "August 08, 2022",
+    "time": "6 min read",
+    "contents": [
+      {
+        "title": "Introduction",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "As a software developer, have you ever found yourself putting off that important project or getting lost in the details of an apparently simple task? If so, you're not alone."
+          },
+          {
+            "type": "paragraph",
+            "text": "Procrastination and perfectionism are two common challenges that many developers face, especially those dealing with ADHD (Attention Deficit Hyperactivity Disorder). In this post, we'll explore how these “enemies” can affect our work and, more importantly, how we can overcome them."
+          }
+        ]
+      },
+      {
+        "title": "The Impact of ADHD on Software Development",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "ADHD can make a software developer's job particularly challenging. The nature of the disorder, characterized by concentration difficulties, impulsivity, lack of motivation (due to low dopamine production) and sometimes hyperactivity, can come into direct conflict with the demands of coding, which require intense focus and attention to detail, or even agility and detachment."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a developer with ADHD, staying focused on a single task for long periods can be extremely difficult. The mind can wander easily, leading to procrastination or frequent switching between tasks, which can result in reduced, if not zero, productivity."
+          }
+        ]
+      },
+      {
+        "title": "Procrastination: The First Enemy",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Procrastination is a common challenge for many, but for developers with ADHD, it can become a significant obstacle. It manifests itself in various ways: postponing the start of a project, leaving bugs to be fixed “later”, or continually reorganizing the list of tasks without actually starting any of them, or in my case, starting the project from scratch over and over again, trying to regain my train of thought."
+          },
+          {
+            "type": "paragraph",
+            "text": "In my case, the creation of this blog was a perfect example of how procrastination can affect our work. Although I'd had the idea for a long time, I always found a reason to put it off: “I need to learn more about design first”, “I'll wait until I have more content”, or “Now isn't the right time”, “It's almost done, I just need to refactor it”. These excuses piled up, delaying the launch of the blog by more than two years."
+          }
+        ]
+      },
+      {
+        "title": "Perfectionism: The Second Enemy",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Perfectionism, although it may seem like a positive quality at first glance, is actually a significant and silent obstacle. For developers, especially those with ADHD, perfectionism can manifest itself as an incessant obsession with minute details, leading to an endless cycle of revisions and adjustments."
+          },
+          {
+            "type": "paragraph",
+            "text": "In my professional journey, I've noticed that perfectionism has intensified as I've progressed in my career. What was once a healthy desire to do a good job became a relentless pursuit of unattainable perfection. This was reflected in the construction of the blog, where every little detail became a source of anxiety and delay."
+          }
+        ]
+      },
+      {
+        "title": "Strategies for Overcoming Procrastination and Perfectionism",
+        "sections": [
+          {
+            "type": "list",
+            "items": [
+              {
+                "title": "Pomodoro Technique",
+                "description": "Divide your work into short, focused intervals (usually 25 minutes), followed by short breaks. This can help maintain focus and reduce procrastination."
+              },
+              {
+                "title": "Realistic to-do lists",
+                "description": "Create daily or weekly to-do lists with achievable goals. Start with smaller tasks to gain momentum."
+              },
+              {
+                "title": "Set personal deadlines",
+                "description": "Set yourself deadlines, even for tasks that don't have an external deadline. This can help combat the tendency to procrastinate."
+              },
+              {
+                "title": "Practice “good enough”",
+                "description": "Learn to recognize when a piece of work is “good enough” and resist the temptation to revise it indefinitely."
+              },
+              {
+                "title": "Mindfulness and meditation",
+                "description": "Mindfulness practices can help improve focus and reduce the anxiety associated with perfectionism."
+              },
+              {
+                "title": "Seek feedback regularly",
+                "description": "Share your work with colleagues or mentors. External feedback can help calibrate your expectations and reduce perfectionist tendencies."
+              },
+              {
+                "title": "Remember, ADHD has no cure",
+                "description": "All this helps, but it will never completely cure your disorder, right now, I'm writing this post as a refuge while I procrastinate on an important task."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember that knowing your limits doesn't make you a hostage to them, it gives you an advantage over them, so bear in mind that knowing you have ADHD gives you the chance to work with it to improve your performance."
+          }
+        ]
+      },
+      {
+        "title": "Conclusion",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "The journey of a software developer, especially one with ADHD, is full of unique challenges. Procrastination and perfectionism can be significant obstacles, but they are not insurmountable. Recognizing these tendencies is the first step to overcoming them."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember, the goal is not perfection, but continuous progress. Every line of code written, every bug fixed and every project completed is a victory. By implementing strategies to manage procrastination and perfectionism, we can not only improve our productivity, but also find more satisfaction in our work."
+          },
+          {
+            "type": "paragraph",
+            "text": "Este blog é um testemunho de que é possível superar esses desafios. Ele pode não ser perfeito, mas está aqui, vivo e crescendo. E isso, em si, é uma grande conquista."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "pneufree-ecommerce",
+    "name": "Pneufree E-commerce",
+    "brief": "E-commerce for Pneufree, one of the largest tire retailers in the LATAM.",
+    "href": "https://pneufree.com.br",
+    "techs": [
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "C#", "variant": "amber" },
+      { "name": "AWS Lambda", "variant": "olive" },
+      { "name": "Python", "variant": "olive" }
+    ]
+  },
+  {
+    "slug": "michelin-official-store",
+    "name": "Michelin Official Store",
+    "brief": "E-commerce for Michelin featured by Pneufree.com and Michelin Brasil.",
+    "href": "https://michelin.pneufree.com.br",
+    "techs": [
+      { "name": "React.js", "variant": "olive" },
+      { "name": "Next.js", "variant": "amber" },
+      { "name": "Tailwind CSS", "variant": "olive" },
+      { "name": "TypeScript", "variant": "amber" },
+      { "name": "MongoDB", "variant": "olive" },
+      { "name": "C#", "variant": "amber" }
+    ]
+  }
+]
