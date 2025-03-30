@@ -1,44 +1,45 @@
 "use client";
 
-import { createContext, ReactNode, useEffect, useRef } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 interface AmbieProviderProps {
   children: ReactNode;
 }
 
-const AmbieContext = createContext({});
+interface AmbieContextProps {
+  toggle: () => void;
+  playing: boolean;
+}
+
+const AmbieContext = createContext({ playing: false } as AmbieContextProps);
+
+export const useAmbie = () => {
+  return useContext(AmbieContext);
+};
 
 export function AmbieProvider({ children }: AmbieProviderProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  useEffect(() => {
-    const controller = new AbortController();
-    const handler = () => {
-      if (audioRef.current) {
-        if (audioRef.current.paused) {
-          audioRef.current.play();
-        }
-      }
-    };
+  const [playing, setPlaying] = useState(false);
 
-    document
-      .querySelector("#home")
-      ?.addEventListener("mouseenter", handler, { signal: controller.signal });
-    document
-      .querySelector("#blog")
-      ?.addEventListener("mouseenter", handler, { signal: controller.signal });
-    document
-      .querySelector("#projects")
-      ?.addEventListener("mouseenter", handler, { signal: controller.signal });
-    document
-      .querySelector("#blog-post")
-      ?.addEventListener("mouseenter", handler, { signal: controller.signal });
-
-    return () => controller.abort();
-  }, []);
+  const toggle = () => {
+    if (audioRef.current) {
+      audioRef.current.paused
+        ? audioRef.current.play()
+        : audioRef.current.pause();
+      setPlaying(!audioRef.current.paused);
+    }
+  };
 
   return (
-    <AmbieContext.Provider value={{}}>
+    <AmbieContext.Provider value={{ toggle, playing }}>
       <audio src="/music.mp3" loop hidden ref={audioRef}></audio>
       {children}
     </AmbieContext.Provider>
