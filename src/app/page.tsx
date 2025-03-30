@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="pt-20 pb-16">
+    <main className="pt-20 pb-16" id="home">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <section className="py-12 flex flex-col items-center text-center">
           <div className="relative size-48 mb-8 overflow-hidden blob-image hover:scale-[1.03] transition-transform duration-300">

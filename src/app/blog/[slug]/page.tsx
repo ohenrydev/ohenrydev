@@ -12,6 +12,12 @@ interface PostContext {
   params: Promise<PostParams>;
 }
 
+export async function generateStaticParams() {
+  return posts.map((post) => ({
+    slug: post.slug
+  }));
+}
+
 export default async function Post(ctx: PostContext) {
   const params = await ctx.params;
   const { slug } = params;
@@ -21,7 +27,7 @@ export default async function Post(ctx: PostContext) {
   if (!post) notFound();
 
   return (
-    <main className="pt-24 pb-16 px-4 sm:px-6">
+    <main className="pt-24 pb-16 px-4 sm:px-6" id="blog-post">
      <article className="max-w-4xl mx-auto">
 
       <header className="mb-16">

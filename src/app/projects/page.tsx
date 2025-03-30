@@ -5,7 +5,7 @@ import { ExternalLinkIcon, GithubIcon, LockIcon } from "lucide-react";
 
 export default function Projects() {
   return (
-    <main className="pt-24 pb-16 px-4 sm:px-6">
+    <main className="pt-24 pb-16 px-4 sm:px-6" id="projects">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-olive mb-4">

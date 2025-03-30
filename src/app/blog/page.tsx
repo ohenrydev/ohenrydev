@@ -3,7 +3,7 @@ import { ArrowRightIcon, CalendarIcon } from "lucide-react";
 import posts from "@/data/posts.json" with { type: "json" };
 
 export default function Blog() {
-  return <main className="pt-24 pb-16 px-4 sm:px-6">
+  return <main className="pt-24 pb-16 px-4 sm:px-6" id="blog">
   <div className="max-w-4xl mx-auto">
     <header className="mb-12">
       <h1 className="text-3xl md:text-4xl font-bold text-olive mb-4">Blog</h1>

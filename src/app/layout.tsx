@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { AmbieProvider } from "@/providers/ambie";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter-sans" });
 
@@ -29,10 +30,12 @@ type RootLayoutProps = Readonly<{ children: ReactNode }>;
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+      <body id="father" className={`${inter.variable} antialiased`}>
+        <AmbieProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AmbieProvider>
       </body>
     </html>
   );
