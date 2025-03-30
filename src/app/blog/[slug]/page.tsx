@@ -1,9 +1,8 @@
 import Link from "next/link";
-import posts from "@/data/posts.json" with { type: "json" };
-import { CalendarIcon } from "lucide-react";
 import { notFound } from "next/navigation";
+import { CalendarIcon } from "lucide-react";
+import posts from "@/data/posts.json" with { type: "json" };
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import Image from "next/image";
 
 interface PostParams {
   slug: string;

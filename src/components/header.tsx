@@ -4,8 +4,8 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { useEffect, useLayoutEffect, useState } from "react";
-import { MenuIcon, X, XIcon } from "lucide-react";
+import { useLayoutEffect, useState } from "react";
+import { MenuIcon, XIcon } from "lucide-react";
 
 export function Header() {
   const pathname = usePathname();

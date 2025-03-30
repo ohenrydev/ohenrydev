@@ -12,7 +12,7 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-muted-foreground max-w-2xl">
-            A collection of projects I've worked on, showcasing my skills and
+            A collection of projects I&apos;ve worked on, showcasing my skills and
             experience in web development.
           </p>
         </header>
@@ -46,7 +46,7 @@ export default function Projects() {
                       <TechBadge
                         key={tech.name}
                         name={tech.name}
-                        variant={tech.variant as any}
+                        variant={tech.variant as "olive" | "amber" | "earth"}
                       />
                     ))}
                   </div>

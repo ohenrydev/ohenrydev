@@ -28,7 +28,7 @@ export default function Home() {
 
           <div className="max-w-2xl mx-auto">
             <div className="max-w-2xl mx-auto">
-              <p className="text-amber mb-2">Hello, I'm</p>
+              <p className="text-amber mb-2">Hello, I&apos;m</p>
               <h1 className="text-4xl font-bold text-olive mb-3">
                 Henrique Martins
               </h1>
@@ -45,7 +45,7 @@ export default function Home() {
                   <TechBadge
                     key={tech.name}
                     name={tech.name}
-                    variant={tech.variant as any}
+                    variant={tech.variant as "olive" | "amber" | "earth"}
                   />
                 ))}
               </div>
@@ -83,7 +83,7 @@ export default function Home() {
             </h2>
             <div className="max-w-none">
               <p className="text-muted-foreground mb-4">
-                Hello! I'm a passionate Full Stack Developer with expertise in
+                Hello! I&apos;m a passionate Full Stack Developer with expertise in
                 building modern web applications. I specialize in creating
                 responsive, user-friendly interfaces and robust backend systems.
               </p>
@@ -120,7 +120,7 @@ export default function Home() {
                       <TechBadge
                         key={tech.name}
                         name={tech.name}
-                        variant={tech.variant as any}
+                        variant={tech.variant as "olive" | "amber" | "earth"}
                       />
                     ))}
                   </div>
