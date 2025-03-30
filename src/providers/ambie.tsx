@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { createContext, ReactNode, useContext, useRef, useState } from "react";
 
 interface AmbieProviderProps {
   children: ReactNode;
@@ -31,9 +24,8 @@ export function AmbieProvider({ children }: AmbieProviderProps) {
 
   const toggle = () => {
     if (audioRef.current) {
-      audioRef.current.paused
-        ? audioRef.current.play()
-        : audioRef.current.pause();
+      if (audioRef.current.paused) audioRef.current.play();
+      else audioRef.current.pause();
       setPlaying(!audioRef.current.paused);
     }
   };
