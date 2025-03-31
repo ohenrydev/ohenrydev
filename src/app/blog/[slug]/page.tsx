@@ -25,6 +25,7 @@ export async function generateMetadata(ctx: PostContext) {
 
   return {
     title: post?.name,
+    author: post?.author,
     description: post?.brief
   }
 }
