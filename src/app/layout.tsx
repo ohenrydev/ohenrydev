@@ -10,19 +10,20 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter-sans" });
 
 export const metadata: Metadata = {
   title: "Henrique Martins - Tech Lead | Full Stack Developer",
-  description: "I am a Developer from Brazil to the world",
+  description:
+    "I'm a developer from Brazil to the world, with over 7 years' experience, helping developers and companies grow",
   openGraph: {
     type: "website",
     locale: "en-US",
     countryName: "Brazil",
     title: "Henrique Martins",
     url: "https://ohenry.dev",
+    images: ["/me_square.png"],
     alternateLocale: ["pt-BR"],
     emails: ["ohenrydevopr@gmail.com"],
     phoneNumbers: ["+55 41 99949-3522"],
-    siteName: "Henrique Martins - Tech Lead at Atento",
-    description: "I am a Developer from Brazil to the world",
   },
+  metadataBase: new URL("https://ohenry.dev"),
 };
 
 type RootLayoutProps = Readonly<{ children: ReactNode }>;
