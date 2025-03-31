@@ -18,6 +18,17 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(ctx: PostContext) {
+  const params = await ctx.params;
+  const { slug } = params;
+  const post = posts.find((post) => post.slug === slug);
+
+  return {
+    title: post?.name,
+    description: post?.brief
+  }
+}
+
 export default async function Post(ctx: PostContext) {
   const params = await ctx.params;
   const { slug } = params;
