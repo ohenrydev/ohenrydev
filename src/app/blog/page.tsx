@@ -1,57 +1,53 @@
-import Link from "next/link";
-import { ArrowRightIcon, CalendarIcon } from "lucide-react";
-import posts from "@/data/posts.json" with { type: "json" };
+import Link from 'next/link';
+import { ArrowRightIcon, CalendarIcon } from 'lucide-react';
+import posts from '@/data/posts.json' with { type: 'json' };
 
 export default function Blog() {
-  return <main className="pt-24 pb-16 px-4 sm:px-6" id="blog">
-  <div className="max-w-4xl mx-auto">
-    <header className="mb-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-olive mb-4">Blog</h1>
-      <p className="text-muted-foreground max-w-2xl">
-        Thoughts, tutorials, and insights about web development, programming,
-        and technology.
-      </p>
-    </header>
+  return (
+    <main className="px-4 pt-24 pb-16 sm:px-6" id="blog">
+      <div className="mx-auto max-w-4xl">
+        <header className="mb-12">
+          <h1 className="text-olive mb-4 text-3xl font-bold md:text-4xl">Blog</h1>
+          <p className="text-muted-foreground max-w-2xl">
+            Thoughts, tutorials, and insights about web development, programming, and technology.
+          </p>
+        </header>
 
-    <div className="space-y-6">
-      {posts.map((post) => (
-        <div
-          key={post.slug}
-          className="border border-border rounded-lg overflow-hidden hover:border-olive/30 transition-all hover:shadow-sm hover:-translate-y-1 duration-300"
-        >
-          <div className="p-6">
-            <h2 className="text-xl font-medium text-olive mb-2">
-              <Link
-                href={`/blog/${post.slug}`}
-                className="hover:text-olive-dark transition-colors"
-              >
-                {post.name}
-              </Link>
-            </h2>
-
-            <div className="flex items-center text-xs text-muted-foreground mb-3">
-              <span className="flex items-center">
-                <CalendarIcon className="w-3 h-3 mr-1" />
-                {post.date}
-              </span>
-              <span className="mx-2">•</span>
-              <span>{post.time}</span>
-            </div>
-
-            <p className="text-muted-foreground text-sm mb-4">
-              {post.brief}
-            </p>
-
-            <Link
-              href={`/blog/${post.slug}`}
-              className="inline-flex items-center text-sm font-medium text-amber hover:text-amber-dark transition-colors"
+        <div className="space-y-6">
+          {posts.map((post) => (
+            <div
+              key={post.slug}
+              className="border-border hover:border-olive/30 overflow-hidden rounded-lg border transition-all duration-300 hover:-translate-y-1 hover:shadow-sm"
             >
-              Read More <ArrowRightIcon className="w-3.5 h-3.5 ml-1" />
-            </Link>
-          </div>
+              <div className="p-6">
+                <h2 className="text-olive mb-2 text-xl font-medium">
+                  <Link href={`/blog/${post.slug}`} className="hover:text-olive-dark transition-colors">
+                    {post.name}
+                  </Link>
+                </h2>
+
+                <div className="text-muted-foreground mb-3 flex items-center text-xs">
+                  <span className="flex items-center">
+                    <CalendarIcon className="mr-1 h-3 w-3" />
+                    {post.date}
+                  </span>
+                  <span className="mx-2">•</span>
+                  <span>{post.time}</span>
+                </div>
+
+                <p className="text-muted-foreground mb-4 text-sm">{post.brief}</p>
+
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-amber hover:text-amber-dark inline-flex items-center text-sm font-medium transition-colors"
+                >
+                  Read More <ArrowRightIcon className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</main>;
+      </div>
+    </main>
+  );
 }

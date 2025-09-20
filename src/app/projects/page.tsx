@@ -1,52 +1,58 @@
-import Link from "next/link";
-import { TechBadge } from "@/components/tech-badge";
-import projects from "@/data/projects.json" with { type: "json" };
-import { ExternalLinkIcon, GithubIcon, LockIcon } from "lucide-react";
+import Link from 'next/link';
+import { TechBadge } from '@/components/tech-badge';
+import projects from '@/data/projects.json' with { type: 'json' };
+import { ExternalLinkIcon, GithubIcon, LockIcon } from 'lucide-react';
+
+import * as motion from 'motion/react-client';
 
 export default function Projects() {
   return (
-    <main className="pt-24 pb-16 px-4 sm:px-6" id="projects">
-      <div className="max-w-4xl mx-auto">
-        <header className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-olive mb-4">
-            Projects
-          </h1>
+    <main className="px-4 pt-24 pb-16 sm:px-6" id="projects">
+      <div className="mx-auto max-w-4xl">
+        <motion.header
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h1 className="text-olive mb-4 text-3xl font-bold md:text-4xl">Projects</h1>
           <p className="text-muted-foreground max-w-2xl">
-            A collection of projects I&apos;ve worked on, showcasing my skills and
-            experience in web development.
+            A collection of projects I&apos;ve worked on, showcasing my skills and experience in web development.
           </p>
-        </header>
+        </motion.header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project) => {
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-1 gap-6 md:grid-cols-2"
+        >
+          {projects.map((project, index) => {
             const isNda = project.nda === true;
             return (
-              <div
+              <motion.div
                 key={project.slug}
-                className={`border border-border rounded-lg overflow-hidden ${
-                  isNda
-                    ? "opacity-80"
-                    : "hover:border-olive/30 hover:shadow-sm hover:-translate-y-1"
-                } transition-all duration-300 `}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 * index }}
+                className={`border-border overflow-hidden rounded-lg border ${
+                  isNda ? 'opacity-80' : 'hover:border-olive/30 hover:-translate-y-1 hover:shadow-sm'
+                } transition-transform duration-300`}
               >
                 <div className="p-6">
-                  <div className="flex items-center mb-3">
-                    <h2 className="text-xl font-medium text-olive mr-2">
-                      {project.title}
-                    </h2>
-                    {isNda && <LockIcon className="w-4 h-4 text-amber" />}
+                  <div className="mb-3 flex items-center">
+                    <h2 className="text-olive mr-2 text-xl font-medium">{project.title}</h2>
+                    {isNda && <LockIcon className="text-amber h-4 w-4" />}
                   </div>
 
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {project.description}
-                  </p>
+                  <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="mb-6 flex flex-wrap gap-2">
                     {project.techs.map((tech) => (
                       <TechBadge
                         key={tech.name}
                         name={tech.name}
-                        variant={tech.variant as "olive" | "amber" | "earth"}
+                        variant={tech.variant as 'olive' | 'amber' | 'earth'}
                       />
                     ))}
                   </div>
@@ -55,12 +61,12 @@ export default function Projects() {
                     {!isNda && project.repo && (
                       <Link
                         href={project.repo}
-                        className="inline-flex items-center text-sm font-medium text-olive hover:text-olive-dark transition-colors"
+                        className="text-olive hover:text-olive-dark inline-flex items-center text-sm font-medium transition-colors"
                         aria-label="GitHub Repository"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <GithubIcon className="w-4 h-4 mr-1" />
+                        <GithubIcon className="mr-1 h-4 w-4" />
                         Code
                       </Link>
                     )}
@@ -68,27 +74,27 @@ export default function Projects() {
                     {!isNda && project.link && (
                       <Link
                         href={project.link}
-                        className="inline-flex items-center text-sm font-medium text-amber hover:text-amber-dark transition-colors"
+                        className="text-amber hover:text-amber-dark inline-flex items-center text-sm font-medium transition-colors"
                         aria-label="Live Demo"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <ExternalLinkIcon className="w-4 h-4 mr-1" />
+                        <ExternalLinkIcon className="mr-1 h-4 w-4" />
                         Live
                       </Link>
                     )}
 
                     {isNda && (
-                      <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-earth/10 text-amber-dark border border-earth/20">
+                      <span className="bg-earth/10 text-amber-dark border-earth/20 inline-block rounded-full border px-3 py-1 text-xs font-medium">
                         More info upon request
                       </span>
                     )}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </main>
   );

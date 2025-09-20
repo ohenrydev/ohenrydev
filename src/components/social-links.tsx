@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { GithubIcon, LinkedinIcon } from "lucide-react";
-import Link from "next/link";
+import { GithubIcon, LinkedinIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export function SocialLinks() {
   return (
@@ -13,7 +13,7 @@ export function SocialLinks() {
         className="text-muted-foreground hover:text-olive transition-colors hover:rotate-6"
         aria-label="GitHub"
       >
-        <GithubIcon className="w-5 h-5" />
+        <GithubIcon className="h-5 w-5" />
       </Link>
       <Link
         href="https://linkedin.com/in/ohenrydev"
@@ -22,7 +22,7 @@ export function SocialLinks() {
         className="text-muted-foreground hover:text-olive transition-colors hover:rotate-6"
         aria-label="LinkedIn"
       >
-        <LinkedinIcon className="w-5 h-5" />
+        <LinkedinIcon className="h-5 w-5" />
       </Link>
     </div>
   );

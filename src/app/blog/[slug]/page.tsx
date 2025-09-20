@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { CalendarIcon } from "lucide-react";
-import posts from "@/data/posts.json" with { type: "json" };
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { CalendarIcon } from 'lucide-react';
+import posts from '@/data/posts.json' with { type: 'json' };
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 interface PostParams {
   slug: string;
@@ -27,7 +27,7 @@ export async function generateMetadata(ctx: PostContext) {
     title: post?.name,
     author: post?.author,
     description: post?.brief
-  }
+  };
 }
 
 export default async function Post(ctx: PostContext) {
@@ -39,54 +39,57 @@ export default async function Post(ctx: PostContext) {
   if (!post) notFound();
 
   return (
-    <main className="pt-24 pb-16 px-4 sm:px-6" id="blog-post">
-     <article className="max-w-4xl mx-auto">
+    <main className="px-4 pt-24 pb-16 sm:px-6" id="blog-post">
+      <article className="mx-auto max-w-4xl">
+        <header className="mb-16">
+          <div className="mb-4 flex items-center justify-center gap-4">
+            <Avatar className="size-16">
+              <AvatarImage src="/me_square.png" />
+            </Avatar>
+            <h1 className="text-olive text-3xl font-bold md:text-4xl">{post.name}</h1>
+          </div>
 
-      <header className="mb-16">
-        
-        <div className="flex items-center gap-4 justify-center mb-4">
-          <Avatar className="size-16">
-            <AvatarImage src="/me_square.png" />
-          </Avatar>
-          <h1 className="text-3xl md:text-4xl font-bold text-olive">{post.name}</h1>
-        </div>
+          <div className="text-muted-foreground mb-6 flex items-center text-sm">
+            <span className="flex items-center">
+              <CalendarIcon className="mr-1 h-4 w-4" />
+              {post.date}
+            </span>
+            <span className="mx-2">•</span>
+            <span>{post.time}</span>
+          </div>
 
-        <div className="flex items-center text-sm text-muted-foreground mb-6">
-          <span className="flex items-center">
-            <CalendarIcon className="w-4 h-4 mr-1" />
-            {post.date}
-          </span>
-          <span className="mx-2">•</span>
-          <span>{post.time}</span>
-        </div>
+          <p className="text-muted-foreground border-amber mb-6 border-l-4 pl-4 text-lg italic">{post.brief}</p>
+        </header>
 
-        <p className="text-lg text-muted-foreground border-l-4 border-amber pl-4 italic mb-6">{post.brief}</p>
-      </header>
-
-      <div className="prose prose-olive max-w-none">
-        {post.contents.map((block, blockIndex) => (
-          <section key={blockIndex} className="mb-10">
-            <h2 className="text-2xl font-semibold text-olive mb-4">{block.title}</h2>
-          {block.sections.map((section) => {
-            switch(section.type) {
-              case "paragraph":
-                return <p key={section.text} className="text-foreground mb-4">{section.text}</p>
-              case "image":
-                // return <Image src={section.src} alt={section.alt} fill />
-              case "list":
-                return (
-                  <ul key={section.type}>
-                     {section.items?.map((item) => (
-                        <li key={item.title} className="mb-2 font-bold text-sm md:text-base list-disc list-inside">
-                            {item.title}{": "}
-                            <span className='font-normal'>{item.description}</span>
-                        </li>
-                      ))}
-                  </ul>
-                )
-            }
-          })}
-            {/* {block.sections.map((section, sectionIndex) => {
+        <div className="prose prose-olive max-w-none">
+          {post.contents.map((block, blockIndex) => (
+            <section key={blockIndex} className="mb-10">
+              <h2 className="text-olive mb-4 text-2xl font-semibold">{block.title}</h2>
+              {block.sections.map((section) => {
+                switch (section.type) {
+                  case 'paragraph':
+                    return (
+                      <p key={section.text} className="text-foreground mb-4">
+                        {section.text}
+                      </p>
+                    );
+                  case 'image':
+                  // return <Image src={section.src} alt={section.alt} fill />
+                  case 'list':
+                    return (
+                      <ul key={section.type}>
+                        {section.items?.map((item) => (
+                          <li key={item.title} className="mb-2 list-inside list-disc text-sm font-bold md:text-base">
+                            {item.title}
+                            {': '}
+                            <span className="font-normal">{item.description}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                }
+              })}
+              {/* {block.sections.map((section, sectionIndex) => {
               if (section.type === "paragraph") {
                 return (
                   <p key={sectionIndex} className="text-foreground mb-4">
@@ -107,16 +110,16 @@ export default async function Post(ctx: PostContext) {
               }
               return null
             })} */}
-          </section>
-        ))}
-      </div>
+            </section>
+          ))}
+        </div>
 
-      <div className="mt-12 pt-6 border-t border-border">
-        <Link href="/blog" className="inline-flex items-center text-olive hover:text-olive-dark transition-colors">
-          ← Back to all posts
-        </Link>
-      </div>
+        <div className="border-border mt-12 border-t pt-6">
+          <Link href="/blog" className="text-olive hover:text-olive-dark inline-flex items-center transition-colors">
+            ← Back to all posts
+          </Link>
+        </div>
       </article>
     </main>
-  )
+  );
 }

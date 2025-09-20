@@ -1,0 +1,75 @@
+ENDPOINT LIST BASES BY GROUP
+/v1/assistant/group/parameters/details/{group_id}
+{
+    "group": [
+        {
+            "base_id": 1,
+            "base_name": "test",
+            "collection_id": "9441c617-c818-4358-bc23-856ef0ed7a3b",
+            "collection_name": "tw",
+            "collection_version": "V01",
+            "collection_active": true,
+            "collection_is_production": false,
+            "collection_is_processed": -1
+        },
+        {
+            "base_id": 19,
+            "base_name": "TESTE HENRIQUE",
+            "collection_id": "5e586919-c870-40e0-b41b-f3d33e2bd12f",
+            "collection_name": "V0",
+            "collection_version": "V02",
+            "collection_active": true,
+            "collection_is_production": false,
+            "collection_is_processed": 1
+        },
+        {
+            "base_id": 20,
+            "base_name": "BLUETOOTH",
+            "collection_id": "5111c634-7dd8-44d7-ba49-af33bd1e1a60",
+            "collection_name": "version",
+            "collection_version": "V01",
+            "collection_active": true,
+            "collection_is_production": false,
+            "collection_is_processed": -1
+        },
+        {
+            "base_id": 28,
+            "base_name": "boot",
+            "collection_id": "f889c488-d02d-44a5-a06c-80424c40ae58",
+            "collection_name": "1",
+            "collection_version": "V01",
+            "collection_active": true,
+            "collection_is_production": false,
+            "collection_is_processed": 1
+        }
+
+    ],
+    "parameters": {
+        "token_number": 400,
+        "doc_number": 3,
+        "temperature": 0.0,
+        "prompt_desc": "teste prompt alterado novo ",
+        "llm_id": 2,
+        "show_link": false,
+        "threshold": 0.0,
+        "enable_context": false
+    }
+}
+
+CREATE INTERACTION
+POST /interaction/add
+
+PAYLOAD
+
+{
+  "db_name": "testrichard_general",
+  "collection_ids": ["dc3e8322-3c16-4760-ac5d-d09f163b378e", "c921f956-b9b5-4bd4-a750-6fc5d31b09d5"],
+  "question_text": "about child care?",
+  "assistant_id": 2,
+  "max_tokens": 500,
+  "doc_number": 3,
+  "llm_id": 2,
+  "donwload_links": true,
+  "channel_id": 1, //1: frontend, 2: hubbie, 3: teams
+  "prompt_desc": "responda no idioma da pergunta e corretamente"
+  }
