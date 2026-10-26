@@ -1,5 +1,217 @@
 [
   {
+    "slug": "karate-e-tdah-o-que-a-ciencia-diz",
+    "name": "Karate e TDAH: o que a ciência diz e por que o dojo ajuda",
+    "brief": "O que a pesquisa mede sobre artes marciais e TDAH, por que o karate em particular ajuda na atenção e no autocontrole, e onde isso tem limite.",
+    "date": "October 26, 2026",
+    "time": "9 min read",
+    "author": "Henrique Martins (o henry dev)",
+    "lang": "pt-BR",
+    "contents": [
+      {
+        "title": "Por que fui atrás disso",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Eu tenho TDAH. Já escrevi sobre isso aqui no blog, em [Procrastination and Perfecionism](/blog/procrastination-and-perfecionism-developers-biggest-enemies), e desde então uma frase me persegue em conversas, em vídeos e em comentários: “arte marcial é ótima pra quem tem TDAH”. Todo mundo diz. Quase ninguém diz de onde tirou."
+          },
+          {
+            "type": "paragraph",
+            "text": "Resolvi fazer o que faço com qualquer biblioteca antes de adotar: ler a documentação. No caso, os estudos. Este texto é o resultado. O que foi medido de verdade sobre exercício, artes marciais e TDAH, por que o karate tem características que fazem sentido para esse tipo de cérebro, e onde o entusiasmo precisa parar. Não é um texto de academia vendendo matrícula. É um texto de alguém com TDAH tentando separar evidência de marketing."
+          }
+        ]
+      },
+      {
+        "title": "O que a pesquisa mede sobre exercício e TDAH",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "A base mais sólida não é sobre artes marciais, é sobre exercício físico em geral. Uma [revisão sistemática com meta-análise de ensaios clínicos randomizados](https://pubmed.ncbi.nlm.nih.gov/25988743/), de Cerrillo-Urbina e colegas (2015), encontrou em crianças com TDAH efeitos de moderados a grandes do exercício aeróbico sobre atenção, hiperatividade, impulsividade, ansiedade e função executiva. O tamanho de efeito para atenção foi 0,84, o que em pesquisa clínica é um número grande."
+          },
+          {
+            "type": "paragraph",
+            "text": "Outra [meta-análise, de 2020](https://pubmed.ncbi.nlm.nih.gov/31629998/), comparou intervenções não medicamentosas para as dificuldades cognitivas do TDAH em quatro categorias: neurofeedback, terapia cognitivo-comportamental, treino cognitivo e exercício físico. O exercício teve o maior efeito médio das quatro, e a inibição (a capacidade de segurar o impulso) foi o domínio que mais melhorou. Uma [revisão sistemática de 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8774533/) chegou a uma conclusão parecida em jovens: atividade física, exercício e esporte melhoram a função executiva, principalmente quando há componente aeróbico."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em adultos a literatura é bem menor. Um [estudo alemão de 2019](https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00132/full) colocou 23 adultos com TDAH e 23 controles para pedalar 30 minutos em intensidade moderada e depois fazer uma tarefa de atenção dentro de um aparelho de ressonância. O exercício melhorou o tempo de reação do grupo com TDAH, e não do grupo controle. É uma amostra pequena e um efeito agudo, de uma sessão só. O mesmo grupo publicou em 2020 uma [revisão](https://doi.org/10.1186/s40479-019-0115-2) que resume a evidência de sessões únicas e de programas longos, com redução dos sintomas centrais e melhora da função executiva como os ganhos mais consistentes."
+          }
+        ]
+      },
+      {
+        "title": "E as artes marciais, especificamente?",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Aqui a evidência é menor e mais antiga, mas existe. O estudo mais citado é o de [Lakes e Hoyt, de 2004](https://doi.org/10.1016/j.appdev.2004.04.002): 207 crianças de escola, da pré-escola ao quinto ano, sorteadas por turma para três meses de tae kwon do tradicional ou de educação física comum. O grupo da arte marcial melhorou mais em autorregulação cognitiva e afetiva, em comportamento em sala e até em um teste de matemática mental. Não era uma amostra de crianças com TDAH, e uma carta publicada depois apontou que, nas avaliações feitas pelos professores, a maioria das diferenças não foi significativa. Vale como sinal, não como veredito."
+          },
+          {
+            "type": "paragraph",
+            "text": "Com TDAH diagnosticado, o ensaio mais direto que encontrei é o de [Kadri e colegas, de 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6352161/): adolescentes com TDAH sorteados para um programa de tae kwon do de um ano e meio ou para o grupo controle. Ao final, quem treinou teve ganhos grandes em testes de atenção seletiva e de controle inibitório (Stroop e Ruff 2 & 7). De novo, amostra pequena. Mas é um ensaio randomizado, longo, com desfechos cognitivos medidos em laboratório e não por questionário."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em 2011, Adele Diamond e Kathleen Lee publicaram na Science uma [revisão das intervenções com evidência para função executiva em crianças](https://pmc.ncbi.nlm.nih.gov/articles/PMC3159917/), e as artes marciais tradicionais estão na lista, ao lado de exercício aeróbico, yoga, mindfulness e treino cognitivo. A própria revista publicou uma carta discordando: “arte marcial” é um rótulo heterogêneo demais, e o efeito médio de uma academia qualquer pode ser nulo. A carta tem razão em um ponto, e ele é importante: o que os estudos positivos testaram foi arte marcial tradicional, com etiqueta, respeito e autocontrole no centro da aula, e não só luta esportiva. Volto a isso daqui a pouco."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em adultos sem TDAH, um [estudo de 2018](https://doi.org/10.3389/fpsyg.2018.00080) comparou praticantes de artes marciais com pelo menos dois anos de treino a não praticantes em um teste de redes atencionais. A diferença apareceu na rede de alerta: os praticantes sustentavam melhor a atenção sem nenhuma pista externa, e quanto mais anos de treino, menor o custo de ficar sem a pista. Não prova causa, mas aponta para o mesmo lugar."
+          },
+          {
+            "type": "paragraph",
+            "text": "O que não existe, até onde procurei: um ensaio clínico grande, com karate especificamente, em pessoas com TDAH. A maioria dos estudos é com tae kwon do, com crianças e com amostras pequenas. Quem te disser que “o karate está provado para TDAH” está esticando a corda."
+          }
+        ]
+      },
+      {
+        "title": "Por que o karate, em particular, faz sentido",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Se a evidência direta é com outras artes, por que falar de karate? Porque os ingredientes que os pesquisadores apontam como ativos (estrutura, repetição, autocontrole, atenção sustentada) estão no centro de uma aula de karate tradicional. Vou pela ordem em que eles aparecem no treino."
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "title": "Kihon, a repetição com contagem",
+                "description": "Boa parte da aula é kihon: a mesma técnica, dezenas de vezes, na contagem do sensei. Para um cérebro que vive trocando de aba, é uma estrutura externa que não depende de força de vontade. Você não precisa decidir o que fazer a seguir. Alguém conta, você executa."
+              },
+              {
+                "title": "Kata, uma sequência que você precisa lembrar",
+                "description": "Kata é uma sequência fixa de movimentos, com começo, meio e fim, que você memoriza e refina durante anos. Exige memória de trabalho, sequenciamento e atenção inteira, e não dá para fazer no automático sem o sensei perceber. A [lista de kata do Goju-ryu Seigokan](https://seigokanbrasil.com.br/kata) mostra a progressão na ordem em que são ensinados, dos dois kata de base criados por Seigo Tada até o Suparinpei, o mais longo, e cada um só entra quando o anterior está sólido."
+              },
+              {
+                "title": "Sanchin, a respiração",
+                "description": "No Goju-ryu, o kata Sanchin é feito com o corpo inteiro em tensão e respiração profunda, lenta e audível (ibuki). Uma [revisão sistemática de 2018](https://doi.org/10.3389/fnhum.2018.00353) sobre respiração lenta, abaixo de dez ciclos por minuto, em adultos saudáveis, associou a prática a maior variabilidade da frequência cardíaca, mais atividade alfa no eletroencefalograma e menos ansiedade e agitação. É uma revisão em pessoas sem diagnóstico, então leia como plausibilidade, não como prova para TDAH."
+              },
+              {
+                "title": "Etiqueta e estrutura do dojo",
+                "description": "Saudação na entrada, fila por graduação, silêncio enquanto o sensei explica, o [dojo kun](https://seigokanbrasil.com.br/dojo-kun) recitado no início ou no fim do treino. Pode parecer formalidade, mas é previsibilidade: a aula tem sempre o mesmo esqueleto. Regras claras e consequência imediata são também a base das intervenções comportamentais para TDAH, que têm [evidência em crianças](https://pubmed.ncbi.nlm.nih.gov/25062591/) para problemas de conduta e para a relação com os pais."
+              },
+              {
+                "title": "Feedback imediato do sensei",
+                "description": "O erro é corrigido na hora, no corpo, sem drama. Isso importa porque uma das características mais estudadas do TDAH é a preferência por recompensas menores e imediatas em vez de maiores e atrasadas, confirmada em [meta-análise de estudos caso-controle](https://pmc.ncbi.nlm.nih.gov/articles/PMC5049699/). Correção e reconhecimento que chegam depois perdem força; os que chegam agora, não. Um bom sensei é um loop de feedback com latência zero."
+              },
+              {
+                "title": "Progressão por faixas",
+                "description": "Exames a cada alguns meses, com conteúdo definido e visível. É um objetivo finito, com prazo, que não depende de você inventar a própria métrica. Gamificação antes de existir a palavra, e sem tela."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Há também dados sobre o karate em si, em outra população. Um [ensaio randomizado de 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC6188869/) com 89 idosos comparou cinco meses de karate, de treino físico convencional e de nenhum treino: o grupo do karate melhorou em atenção dividida, tolerância ao estresse e reatividade motora. O estudo não teve cegamento, o que pesa contra. Um [estudo anterior, de 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3282502/), não achou diferença cognitiva entre karate e outros treinos, mas achou melhora no bem-estar emocional só no grupo do karate. Não é TDAH. Mas é karate, medido."
+          }
+        ]
+      },
+      {
+        "title": "Onde isso tem limite",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Karate é complemento. Não é diagnóstico, não é tratamento e não substitui nenhum dos dois. Diagnóstico de TDAH é feito por profissional de saúde, e decisões sobre medicação e terapia são tomadas com esse profissional, não com o sensei e não com um blog. A [ABDA](https://tdah.org.br), Associação Brasileira do Déficit de Atenção, tem material em português para quem quer entender o diagnóstico antes de procurar ajuda."
+          },
+          {
+            "type": "paragraph",
+            "text": "Os efeitos medidos nos estudos vieram de meses de prática regular, não de uma aula experimental. E a mesma condição que o karate ajuda a administrar é a que dificulta manter a frequência. Começar com entusiasmo e sumir na terceira semana é um padrão que quem tem TDAH conhece bem. A estrutura do dojo ajuda, mas não faz isso sozinha."
+          },
+          {
+            "type": "paragraph",
+            "text": "Também não há cura. Nenhum dos estudos citados diz isso, e qualquer dojo que prometa é sinal para desconfiar. O que a literatura sustenta é mais modesto e mais útil: exercício regular melhora atenção e controle inibitório, e artes marciais tradicionais parecem somar estrutura e autorregulação a esse pacote. Isso é bom. Só não é mágica."
+          }
+        ]
+      },
+      {
+        "title": "Por onde começar",
+        "sections": [
+          {
+            "type": "paragraph",
+            "text": "Se você quer testar, procure um dojo com aulas estruturadas de verdade: linhagem clara, etiqueta, kihon, kata, exames de graduação e um sensei que corrige. Desconfie do lugar que vende “defesa pessoal em oito semanas”. O que os estudos apontam como ingrediente ativo é justamente a parte tradicional, lenta e repetitiva."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em Curitiba, o [Gairinkai Karate-Do](https://gairinkai.com), do Sensei Joetsu Narita, 5º Dan, ensina Goju-ryu na linhagem Seigokan, no Centro, com aulas às terças e quintas à noite e aos sábados de manhã. O dojo aceita crianças, adolescentes e adultos, diz adaptar o treino à idade e ao nível de cada um e, pelo que está no próprio site, recebe praticantes neurodivergentes. A primeira aula é gratuita. Eles estão no Instagram como [@gairinkaidojo](https://www.instagram.com/gairinkaidojo/)."
+          },
+          {
+            "type": "paragraph",
+            "text": "O Gairinkai é filiado à [Seigokan Brasil](https://seigokanbrasil.com.br), a organização brasileira do Karate-Do Goju-ryu Seigokan, na linhagem de Seigo Tada e ligada à sede em Himeji, no Japão. Se você está em outra cidade, o [diretório de dojos filiados](https://seigokanbrasil.com.br/dojos) é o lugar para procurar. O [canal no YouTube](https://www.youtube.com/@seigokanbrasil) e o Instagram [@seigokanbrasiloficial](https://www.instagram.com/seigokanbrasiloficial/) dão uma ideia de como é o treino antes de você pisar no tatame."
+          },
+          {
+            "type": "paragraph",
+            "text": "Minha sugestão prática, baseada nos prazos dos estudos: fale com o sensei sobre o TDAH no primeiro dia, comprometa-se com duas aulas por semana e só avalie se está funcionando depois de três meses. Menos que isso não é teste, é uma aula experimental."
+          }
+        ]
+      },
+      {
+        "title": "Fontes",
+        "sections": [
+          {
+            "type": "list",
+            "items": [
+              {
+                "title": "Cerrillo-Urbina et al. (2015)",
+                "description": "The effects of physical exercise in children with ADHD: a systematic review and meta-analysis of randomized control trials. Child: Care, Health and Development. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25988743/)"
+              },
+              {
+                "title": "Lambez et al. (2020)",
+                "description": "Non-pharmacological interventions for cognitive difficulties in ADHD: a systematic review and meta-analysis. Journal of Psychiatric Research. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31629998/)"
+              },
+              {
+                "title": "Montalva-Valenzuela et al. (2022)",
+                "description": "Effects of physical activity, exercise and sport on executive function in young people with ADHD: a systematic review. European Journal of Investigation in Health, Psychology and Education. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8774533/)"
+              },
+              {
+                "title": "Mehren et al. (2019)",
+                "description": "Acute effects of aerobic exercise on executive function and attention in adult patients with ADHD. Frontiers in Psychiatry. [Frontiers](https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00132/full)"
+              },
+              {
+                "title": "Mehren et al. (2020)",
+                "description": "Physical exercise in attention deficit hyperactivity disorder: evidence and implications. Borderline Personality Disorder and Emotion Dysregulation. [Springer](https://doi.org/10.1186/s40479-019-0115-2)"
+              },
+              {
+                "title": "Lakes & Hoyt (2004)",
+                "description": "Promoting self-regulation through school-based martial arts training. Journal of Applied Developmental Psychology. [DOI](https://doi.org/10.1016/j.appdev.2004.04.002)"
+              },
+              {
+                "title": "Kadri et al. (2019)",
+                "description": "Effect of Taekwondo practice on cognitive function in adolescents with ADHD. International Journal of Environmental Research and Public Health. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6352161/)"
+              },
+              {
+                "title": "Diamond & Lee (2011)",
+                "description": "Interventions shown to aid executive function development in children 4 to 12 years old. Science. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3159917/)"
+              },
+              {
+                "title": "Johnstone & Marí-Beffa (2018)",
+                "description": "The effects of martial arts training on attentional networks in typical adults. Frontiers in Psychology. [Frontiers](https://doi.org/10.3389/fpsyg.2018.00080)"
+              },
+              {
+                "title": "Zaccaro et al. (2018)",
+                "description": "How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience. [Frontiers](https://doi.org/10.3389/fnhum.2018.00353)"
+              },
+              {
+                "title": "Daley et al. (2014)",
+                "description": "Behavioral interventions in ADHD: a meta-analysis of randomized controlled trials across multiple outcome domains. Journal of the American Academy of Child and Adolescent Psychiatry. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25062591/)"
+              },
+              {
+                "title": "Jackson & MacKillop (2016)",
+                "description": "ADHD and monetary delay discounting: a meta-analysis of case-control studies. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5049699/)"
+              },
+              {
+                "title": "Witte et al. (2016)",
+                "description": "Comparing the effectiveness of karate and fitness training on cognitive functioning in older adults: a randomized controlled trial. Journal of Sport and Health Science. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6188869/)"
+              },
+              {
+                "title": "Jansen & Dahmen-Zimmer (2012)",
+                "description": "Effects of cognitive, motor, and karate training on cognitive functioning and emotional well-being of elderly people. Frontiers in Psychology. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3282502/)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "procrastination-and-perfecionism-developers-biggest-enemies",
     "name": "Procrastination and Perfecionism: Developers Biggest Enemies",
     "brief": "In this post, we'll explore my experience with ADHD and how it affects my professional life and personal projects. We'll also look at strategies for overcoming procrastination and perfectionism, and how to navigate the challenges of ADHD in software development.",
@@ -118,6 +330,7 @@
           }
         ]
       }
-    ]
+    ],
+    "lang": "en"
   }
 ]

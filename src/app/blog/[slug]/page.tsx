@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { CalendarIcon } from "lucide-react";
 import posts from "@/data/posts.json" with { type: "json" };
@@ -10,6 +11,39 @@ interface PostParams {
 
 interface PostContext {
   params: Promise<PostParams>;
+}
+
+const INLINE_LINK = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)/g;
+const LINK_CLASS =
+  "text-olive underline underline-offset-4 decoration-amber hover:text-olive-dark transition-colors";
+
+/** Turns `[label](url)` markers inside post text into links; the rest stays plain text. */
+function renderInline(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  let last = 0;
+
+  for (const match of text.matchAll(INLINE_LINK)) {
+    const [raw, label, href] = match;
+    const start = match.index ?? 0;
+    if (start > last) nodes.push(text.slice(last, start));
+
+    const key = `${start}-${href}`;
+    nodes.push(
+      href.startsWith("http") ? (
+        <a key={key} href={href} target="_blank" rel="noopener" className={LINK_CLASS}>
+          {label}
+        </a>
+      ) : (
+        <Link key={key} href={href} className={LINK_CLASS}>
+          {label}
+        </Link>
+      )
+    );
+    last = start + raw.length;
+  }
+
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
 }
 
 export async function generateStaticParams() {
@@ -26,7 +60,15 @@ export async function generateMetadata(ctx: PostContext) {
   return {
     title: post?.name,
     author: post?.author,
-    description: post?.brief
+    description: post?.brief,
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      type: "article",
+      title: post?.name,
+      description: post?.brief,
+      url: `/blog/${slug}`,
+      locale: post?.lang
+    }
   }
 }
 
@@ -40,7 +82,7 @@ export default async function Post(ctx: PostContext) {
 
   return (
     <main className="pt-24 pb-16 px-4 sm:px-6" id="blog-post">
-     <article className="max-w-4xl mx-auto">
+     <article className="max-w-4xl mx-auto" lang={post.lang}>
 
       <header className="mb-16">
         
@@ -67,46 +109,29 @@ export default async function Post(ctx: PostContext) {
         {post.contents.map((block, blockIndex) => (
           <section key={blockIndex} className="mb-10">
             <h2 className="text-2xl font-semibold text-olive mb-4">{block.title}</h2>
-          {block.sections.map((section) => {
+          {block.sections.map((section, sectionIndex) => {
             switch(section.type) {
               case "paragraph":
-                return <p key={section.text} className="text-foreground mb-4">{section.text}</p>
-              case "image":
-                // return <Image src={section.src} alt={section.alt} fill />
+                return (
+                  <p key={sectionIndex} className="text-foreground mb-4">
+                    {renderInline(section.text ?? "")}
+                  </p>
+                )
               case "list":
                 return (
-                  <ul key={section.type}>
+                  <ul key={sectionIndex}>
                      {section.items?.map((item) => (
                         <li key={item.title} className="mb-2 font-bold text-sm md:text-base list-disc list-inside">
-                            {item.title}{": "}
-                            <span className='font-normal'>{item.description}</span>
+                            {renderInline(item.title)}{": "}
+                            <span className='font-normal'>{renderInline(item.description)}</span>
                         </li>
                       ))}
                   </ul>
                 )
+              default:
+                return null
             }
           })}
-            {/* {block.sections.map((section, sectionIndex) => {
-              if (section.type === "paragraph") {
-                return (
-                  <p key={sectionIndex} className="text-foreground mb-4">
-                    {section.text}
-                  </p>
-                )
-              } else if (section.type === "list" && section.items) {
-                return (
-                  <div key={sectionIndex} className="space-y-4 my-6">
-                    {section.items.map((item, itemIndex) => (
-                      <div key={itemIndex} className="bg-background border border-border rounded-lg p-4">
-                        <h3 className="text-lg font-medium text-olive mb-2">{item.title}</h3>
-                        <p className="text-muted-foreground">{item.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                )
-              }
-              return null
-            })} */}
           </section>
         ))}
       </div>
