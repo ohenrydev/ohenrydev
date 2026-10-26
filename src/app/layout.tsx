@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     locale: "en-US",
     countryName: "Brazil",
     title: "Henrique Martins",
-    url: "https://ohenry.dev",
+    url: "https://www.ohenry.dev",
     images: ["/me_square.png"],
     alternateLocale: ["pt-BR"],
     emails: ["ohenrydevopr@gmail.com"],
     phoneNumbers: ["+55 41 99949-3522"],
   },
-  metadataBase: new URL("https://ohenry.dev"),
+  metadataBase: new URL("https://www.ohenry.dev"),
 };
 
 type RootLayoutProps = Readonly<{ children: ReactNode }>;
